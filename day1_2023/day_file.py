@@ -12,8 +12,7 @@ if __name__ == "__main__":
             final_int = int(final_digit)
             list_of_digit.append(final_int)
 
-
-        print(list_of_digit[::-1])
+        print(sum(list_of_digit))
 
 
 
