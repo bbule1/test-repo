@@ -36,6 +36,8 @@ if __name__ == "__main__":
                         first_digit = letter
                         break
 
+
+
             last_digit = None
             word_builder_last = ''
             for letter in word[::-1]:
@@ -58,9 +60,9 @@ if __name__ == "__main__":
             final_int = int(final_digit)
             list_of_digit.append(final_int)
 
+            print(str(sum(list_of_digit)))
 
 
-        print(sum(list_of_digit))
 
 
 
