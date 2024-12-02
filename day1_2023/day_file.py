@@ -16,7 +16,6 @@ if __name__ == "__main__":
     min_len_num = 3
 
     with open(input_file) as f:
-        list_of_digit = []
         for word in f.read().splitlines():
             first_digit = None
             word_builder_first = ''
@@ -36,8 +35,6 @@ if __name__ == "__main__":
                         first_digit = letter
                         break
 
-
-
             last_digit = None
             word_builder_last = ''
             for letter in word[::-1]:
@@ -56,9 +53,7 @@ if __name__ == "__main__":
                         last_digit = letter
                         break
 
-            final_digit = first_digit + last_digit
-            final_int = int(final_digit)
-            list_of_digit.append(final_int)
+            list_of_digit = [int(a) + int(b) for a,b in zip(first_digit, last_digit)]
 
             print(str(sum(list_of_digit)))
 
